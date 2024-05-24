@@ -6,19 +6,19 @@ const Header = () => {
     const [dropNav, setDropNav] = useState(false);
 
     return (
-        <div className='p-4 bg-gradient-to-r from-blue-500 to-purple-500 flex justify-between items-center relative'>
+        <div className='p-4 bg-white flex justify-between items-center relative shadow-lg sticky absolute top-0 z-50'>
             <div className='flex items-center gap-3'>
                 <Image
                     src='/images/photo.png'
                     alt='Description of the image'
                     width={50}
                     height={50}
-                    className='rounded-full border-2 border-white'
+                    className='rounded-full border-2 border-gray-200'
                 />
-                <h3 className='text-white font-bold text-xl md:text-2xl'>HARSHIT BRIJWASI</h3>
+                <h3 className='text-gray-800 font-bold text-xl md:text-2xl'>HARSHIT BRIJWASI</h3>
             </div>
 
-            {dropNav === false ? 
+            {!dropNav ? 
                 <svg 
                     onClick={() => setDropNav(!dropNav)}
                     className='inline-block md:hidden w-6 cursor-pointer' 
@@ -44,12 +44,12 @@ const Header = () => {
                 </svg>
             }
 
-            <nav className={`${dropNav ? 'block z-10 absolute top-full right-0 mt-2 p-4 bg-white text-black rounded shadow-lg' : 'hidden'} md:inline-block md:relative md:top-0 md:mt-0 md:bg-transparent md:text-white md:shadow-none`}>
+            <nav className={`${dropNav ? 'block z-10 absolute top-full right-0 mt-2 p-4 bg-white text-gray-800 rounded shadow-lg' : 'hidden'} md:inline-block md:relative md:top-0 md:mt-0 md:bg-transparent md:text-gray-800 md:shadow-none`}>
                 <ul className='flex flex-col md:flex-row gap-4 md:gap-6 font-semibold'>
-                    <li className='hover:text-gray-300 transition-colors hover:cursor-pointer hover:scale-110'>HOME</li>
-                    <li className='hover:text-gray-300 transition-colors hover:cursor-pointer hover:scale-110'>ABOUT</li>
-                    <li className='hover:text-gray-300 transition-colors hover:cursor-pointer hover:scale-110'>PROJECTS</li>
-                    <li className='hover:text-gray-300 transition-colors hover:cursor-pointer hover:scale-110'>CONTACT</li>
+                    <li className='hover:text-blue-500 transition-colors hover:cursor-pointer hover:scale-110'>HOME</li>
+                    <li className='hover:text-blue-500 transition-colors hover:cursor-pointer hover:scale-110'>ABOUT</li>
+                    <li className='hover:text-blue-500 transition-colors hover:cursor-pointer hover:scale-110'>PROJECTS</li>
+                    <li className='hover:text-blue-500 transition-colors hover:cursor-pointer hover:scale-110'>CONTACT</li>
                 </ul>
             </nav>
         </div>
