@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-50 to-blue-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div id = 'contact' className="bg-gradient-to-r from-blue-50 to-blue-100 py-40 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-2xl">
         <div className="text-center mb-8">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">Contact Me</h1>
