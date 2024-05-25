@@ -1,37 +1,35 @@
-'use client'
-import React, { useState } from 'react';
-import useFormTest from './assets/useFormTest';
+"use client";
+import React, { useState } from "react";
+import useFormTest from "./assets/useFormTest";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
-  const [message,setMessage] = useState("");
+  const [message, setMessage] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
-  }
+  };
 
   const handleName = (e) => {
     setName(e.target.value);
-  }
+  };
   const handleMessage = (e) => {
     setMessage(e.target.value);
-  }
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(message.length == 0){
-      setErrorMsg("please enter some message");
-      return;
-    }
-    const errorMsg = useFormTest(email, name);
-    console.log(errorMsg);
+   
+    const errorMsg = useFormTest(email, name,message);
     setErrorMsg(errorMsg);
-  }
-  
+  };
 
   return (
-    <div id='contact' className="bg-gradient-to-r from-blue-50 to-blue-100 py-40 px-4 sm:px-6 lg:px-8">
+    <div
+      id="contact"
+      className="bg-gradient-to-r from-blue-50 to-blue-100 py-40 px-4 sm:px-6 lg:px-8"
+    >
       <div className="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-2xl">
         <div className="text-center mb-8">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">Contact Me</h1>
@@ -67,7 +65,13 @@ const Contact = () => {
               rows="4"
             ></textarea>
           </div>
-          {errorMsg === true ? <span className='text-green-600 text-xl'>Submitted successfully</span> : <span className=' text-red-400'>{errorMsg}</span>}
+          {errorMsg === true ? (
+            <span className="text-green-600 text-xl">
+              Submitted successfully
+            </span>
+          ) : (
+            <span className=" text-red-400">{errorMsg}</span>
+          )}
           <div className="text-center">
             <button
               type="submit"

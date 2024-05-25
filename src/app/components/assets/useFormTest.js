@@ -1,4 +1,4 @@
- const useFormTest = ( email, name ) => {
+ const useFormTest = ( email, name,message ) => {
     console.log(email,name);
     const mailValidation = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     const nameValidation = /^[A-Za-zÀ-ÿ ,.'-]+$/;
@@ -13,6 +13,9 @@
     }
     if (!mailValidation.test(email)) {
         return "Invalid Email ID";
+    }
+    if(!message){
+        return "message cannot be empty"
     }
 
     return true;
