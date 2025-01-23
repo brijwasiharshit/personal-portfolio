@@ -59,9 +59,14 @@ const About = () => {
               <span className="bg-gray-200 text-gray-800 py-1 px-3 rounded-lg shadow">
                 Express JS
               </span>
-              <span className="bg-gray-200 text-gray-800 py-1 px-3 rounded-lg shadow mx-auto">
-                FireBase
+              <span className="bg-gray-200 text-gray-800 py-1 px-3 rounded-lg shadow">
+                MongoDB
               </span>
+              <span className="bg-gray-200 text-gray-800 py-1 px-3 rounded-lg shadow">
+                Mongoose
+              </span>
+              
+              
             </div>
           </div>
         </div>

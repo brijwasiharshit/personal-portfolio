@@ -13,6 +13,15 @@ const Projects = () => {
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <ProjectCard
+                        title="CryptoCrest"
+                        imageSrc="/images/cryptocrest.png"
+                        imageAlt="CryptoCrest Image"
+                        description="Cryptocrest is a web platform to show pricing and comparison of various bitcoins along with rate change graph."
+    
+                        liveLink="https://koinxcryp.netlify.app/"
+                        codeLink="https://github.com/brijwasiharshit/KoinX-assignment"
+                    />
                     <ProjectCard
                         title="EatMore Food Delivery"
                         imageSrc="/images/eatMore.jpg"

@@ -27,7 +27,7 @@ const SideNav = () => {
             </li>
            </Link>
             
-            <Link href={'https://drive.google.com/file/d/1VjKdckKaiorcJeTkdpdMh9RUf6r6QPne/view?usp=drive_link'}>
+            <Link href={'https://drive.google.com/file/d/1zx1TId2UEJT__xiBiUVkS1M6PXBdH7XZ/view?usp=drive_link'}>
             <li className='hover:scale-125'>
             <ResumeSVG />
 
